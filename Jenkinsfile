@@ -7,7 +7,7 @@ pipeline {
         stage('docker-build') {
             steps {
                 // sh 'docker build -t donkeysharp/juice-shop:latest .'
-                sh 'echo hello world!'
+                sh 'echo hello world!!'
                 sh 'ls -l'
             }
         }
