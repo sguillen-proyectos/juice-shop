@@ -3,6 +3,10 @@ properties([pipelineTriggers([githubPush()])])
 pipeline {
     agent any
 
+    options {
+        timestamps ()
+    }
+
     stages {
         stage('docker-build') {
             steps {
