@@ -11,6 +11,12 @@ pipeline {
             }
         }
 
+        stage('deploy-application') {
+            steps {
+                build job: 'deploy-juice-shop', wait: true
+            }
+        }
+
         stage('run-security-tests') {
             steps {
                 build job: 'test-job-sergio', wait: false
