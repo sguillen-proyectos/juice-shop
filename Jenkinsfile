@@ -13,7 +13,7 @@ pipeline {
 
         stage('run-security-tests') {
             steps {
-                build 'test-job-sergio'
+                build job: 'test-job-sergio', wait: false
             }
         }
     }
