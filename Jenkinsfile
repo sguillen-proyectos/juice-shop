@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('docker-build') {
             steps {
-                sh 'echo Hola mundo'
+                sh 'echo Hola mundo, DevSecOps Latam!'
                 sh 'docker build -t donkeysharp/juice-shop:latest .'
                 sh 'docker push donkeysharp/juice-shop:latest'
             }
